@@ -1,0 +1,27 @@
+{
+  "name": "allex_subserviceenabledusersessionmixinlib",
+  "version": "1.0.0",
+  "description": "AllexJS mixin lib for User Session that needs to create sub-Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "allex-mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:allex-libs/subserviceenabledusersessionmixin.git"
+  },
+  "keywords": [
+    "ecosystem:AllexJS",
+    "user",
+    "session",
+    "subservices",
+    "mixin",
+    "lib"
+  ],
+  "author": "Andrija Petrovic <andrija.hers@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allex-libs/subserviceenabledusersessionmixin/issues"
+  },
+  "homepage": "https://github.com/allex-libs/subserviceenabledusersessionmixin#readme"
+}
