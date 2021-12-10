@@ -1,6 +1,6 @@
 {
   "name": "allex_subserviceenabledusersessionmixinlib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AllexJS mixin lib for User Session that needs to create sub-Services",
   "main": "index.js",
   "scripts": {
