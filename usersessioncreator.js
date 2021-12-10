@@ -35,8 +35,7 @@ function createSessionMixin (execlib, sinkacquiringlib, mylib) {
     }), defer);
   };
   function onSinkExecutor (methodname, params, sink, defer) {
-    var allparams = [methodname];
-    Array.prototype.push.call(allparams, params);
+    var allparams = [methodname].concat(params);
     qlib.promise2defer(sink.call.apply(sink, allparams), defer);
   }
   UserSessionMixin.prototype.executeOnFunctionality = function (functionalityname, methodname, params, defer) {
@@ -75,7 +74,6 @@ function createSessionMixin (execlib, sinkacquiringlib, mylib) {
     params = null;
   };  
   function onSinkSessionExecutor (methodname, params, sink, defer) {
-    console.log('invokeSessionMethod', methodname);
     taskRegistry.run('invokeSessionMethod',{
       sink: sink,
       methodname: methodname,
